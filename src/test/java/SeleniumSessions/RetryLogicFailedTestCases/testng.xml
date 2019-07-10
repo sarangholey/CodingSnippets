@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RetryFailedTestSuite"  verbose="1" >
+	
+	<listeners>
+		<listener class-name="SeleniumSessions.RetryLogicFailedTestCases.MyTransformer"/>
+	</listeners>
+	
+		<test name = "RetryMutlipleFailTestCases">
+			<classes>
+				<class name="SeleniumSessions.RetryLogicFailedTestCases.MyTest"/>
+			</classes>
+		</test> <!-- Test -->
+</suite> <!-- Suite -->

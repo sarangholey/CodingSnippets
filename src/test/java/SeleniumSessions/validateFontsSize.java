@@ -13,8 +13,12 @@ public class validateFontsSize {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com");
 		String IAmFeelingText = driver.findElement(By.name("btnI")).getCssValue("font-size");
+		String IAmFeelingTextFontStyle = driver.findElement(By.name("btnI")).getCssValue("font-family");
+		String IAmFeelingTextFontColour = driver.findElement(By.name("btnI")).getCssValue("color");
+		
 		System.out.println("The Font Size for I am feeling lucky Button Text is: " + IAmFeelingText);
-
+		System.out.println("The Font Size for I am feeling lucky Button Font Style is: " + IAmFeelingTextFontStyle);
+		System.out.println("The Font Size for I am feeling lucky Button Font Colour is: " + IAmFeelingTextFontColour);
 	}
 
 }

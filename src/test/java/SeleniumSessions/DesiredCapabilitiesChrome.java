@@ -20,8 +20,8 @@ public class DesiredCapabilitiesChrome {
 		
 		// To add specific Extentions on Automated Browser cnotrolled via selenium at fresh Instance ex - AddBlockerPlus
 		
-		options.addExtensions(new File("../JanSeleniumTraining/AddBlockerPlus.crx"));
-		options.addExtensions(new File("../JanSeleniumTraining/AddBlock.crx"));
+		options.addExtensions(new File("AddBlockerPlus.crx"));
+		options.addExtensions(new File("AddBlock.crx"));
 		
 		// To set SSL Cerificated as True which is not available with some WebSites
 		options.setAcceptInsecureCerts(true);

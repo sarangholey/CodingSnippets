@@ -16,14 +16,16 @@ public class ParabankLoginViaIncognito
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
+		options.addArguments("--headless");
 		DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		
 		driver = new ChromeDriver(capabilities);
 		driver.get("https://parabank.parasoft.com/parabank/index.htm");
-		driver.findElement(By.name("username")).sendKeys("john");
-		driver.findElement(By.name("password")).sendKeys("demo");
-		driver.findElement(By.xpath("//input[@class='button']")).click();
+		System.out.println(driver.getTitle());
+//		driver.findElement(By.name("username")).sendKeys("john");
+//		driver.findElement(By.name("password")).sendKeys("demo");
+//		driver.findElement(By.xpath("//input[@class='button']")).click();
 		
 		
 

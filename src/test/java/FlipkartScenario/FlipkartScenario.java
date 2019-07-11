@@ -15,7 +15,7 @@ public class FlipkartScenario {
 
 	static WebDriver driver;
 	static int total = 0;
-	static float averageOfItems = 0;
+	
 	public static void main(String[] args) 
 	{
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
@@ -46,7 +46,6 @@ public class FlipkartScenario {
 			total = total + temp;
 		}
 		System.out.println("Total of all iphones is" + total);
-		averageOfItems = total/(dispalyedPrice.size());
 		System.out.println("Average is " + total/(10));
 
 	}

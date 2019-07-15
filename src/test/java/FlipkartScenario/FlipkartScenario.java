@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,11 +16,14 @@ public class FlipkartScenario {
 
 	static WebDriver driver;
 	static int total = 0;
-	
+	static float averageOfItems = 0;
 	public static void main(String[] args) 
 	{
+	
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--incognito");
+		driver = new ChromeDriver(options);
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -47,6 +51,7 @@ public class FlipkartScenario {
 		}
 		System.out.println("Total of all iphones is" + total);
 		System.out.println("Average is " + total/(10));
+		
 
 	}
 

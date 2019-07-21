@@ -1,4 +1,4 @@
-package FlipkartScenario;
+package Scenarios;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

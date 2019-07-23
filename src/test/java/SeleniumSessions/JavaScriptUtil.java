@@ -70,9 +70,14 @@ public class JavaScriptUtil {
 	
 	public static String getBrowserInfo(WebDriver driver)
 	{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
 		String uAgent = js.executeScript("return navigator.userAgent;").toString();
 		return uAgent;
+	}
+	
+	public void sendKeysUsingJS(String id, String value,WebDriver driver) {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("document.getElementById('" + id + "').value='" + value + "'");
 	}
 
 }

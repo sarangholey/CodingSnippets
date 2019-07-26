@@ -35,7 +35,7 @@ public class AjaxContolGoogleSearch {
 				System.out.println(driver.getTitle());
 				break;
 			}
-		}
+		}  
 	}
 
 }

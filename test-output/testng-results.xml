@@ -2,16 +2,27 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2019-07-21T10:46:31Z" finished-at="2019-07-21T10:46:31Z">
+  <suite name="Default suite" duration-ms="5370" started-at="2019-07-26T16:53:47Z" finished-at="2019-07-26T16:53:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2019-07-21T10:46:31Z" finished-at="2019-07-21T10:46:31Z">
-      <class name="Scenarios.FlipkartSortProducts.Test.test">
-        <test-method status="PASS" signature="openchrome()[pri:0, instance:Scenarios.FlipkartSortProducts.Test.test@69b0fd6f]" name="openchrome" duration-ms="11" started-at="2019-07-21T10:46:31Z" finished-at="2019-07-21T10:46:31Z">
+    <test name="Default test" duration-ms="5370" started-at="2019-07-26T16:53:47Z" finished-at="2019-07-26T16:53:53Z">
+      <class name="temp.tc_hubspot">
+        <test-method status="PASS" signature="open1()[pri:0, instance:temp.tc_hubspot@cb0ed20]" name="open1" is-config="true" duration-ms="3280" started-at="2019-07-26T16:53:48Z" finished-at="2019-07-26T16:53:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openchrome -->
-      </class> <!-- Scenarios.FlipkartSortProducts.Test.test -->
+        </test-method> <!-- open1 -->
+        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:temp.tc_hubspot@cb0ed20]" name="open" duration-ms="2023" started-at="2019-07-26T16:53:51Z" finished-at="2019-07-26T16:53:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+      </class> <!-- temp.tc_hubspot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

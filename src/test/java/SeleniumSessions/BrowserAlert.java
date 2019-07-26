@@ -1,5 +1,7 @@
 package SeleniumSessions;
 
+import java.net.URI;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
@@ -31,7 +33,7 @@ public class BrowserAlert
 		
 		//wait = new WebDriverWait(driver, 5);
 		driver.get("https://www.jquery-az.com/javascript/demo.php?ex=151.0_3");
-		
+	
 		WebElement goButton =  driver.findElement(By.xpath("//button[@onclick='JSalert()']"));
 		goButton.click();
 		

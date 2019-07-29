@@ -26,8 +26,8 @@ public class BrokenLinksFinding
 	{
 		
 		
-		
-		System.setProperty("webdriver.chrome.driver",args[0]);
+		System.setProperty("webdriver.chrome.driver","chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver",args[0]);
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		// http://the-internet.herokuapp.com/broken_images - another demo broken link site

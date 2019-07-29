@@ -2,27 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5370" started-at="2019-07-26T16:53:47Z" finished-at="2019-07-26T16:53:53Z">
+  <suite name="Default suite" duration-ms="13111" started-at="2019-07-29T13:03:44Z" finished-at="2019-07-29T13:03:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5370" started-at="2019-07-26T16:53:47Z" finished-at="2019-07-26T16:53:53Z">
-      <class name="temp.tc_hubspot">
-        <test-method status="PASS" signature="open1()[pri:0, instance:temp.tc_hubspot@cb0ed20]" name="open1" is-config="true" duration-ms="3280" started-at="2019-07-26T16:53:48Z" finished-at="2019-07-26T16:53:51Z">
+    <test name="Default test" duration-ms="13111" started-at="2019-07-29T13:03:44Z" finished-at="2019-07-29T13:03:57Z">
+      <class name="SeleniumSessions.DatePicker.DatePickerOnGoIbibo">
+        <test-method status="PASS" signature="setup()[pri:0, instance:SeleniumSessions.DatePicker.DatePickerOnGoIbibo@5891e32e]" name="setup" is-config="true" duration-ms="4825" started-at="2019-07-29T13:03:44Z" finished-at="2019-07-29T13:03:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open1 -->
-        <test-method status="PASS" signature="open(java.lang.String)[pri:0, instance:temp.tc_hubspot@cb0ed20]" name="open" duration-ms="2023" started-at="2019-07-26T16:53:51Z" finished-at="2019-07-26T16:53:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.google.com]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="datePicker()[pri:0, instance:SeleniumSessions.DatePicker.DatePickerOnGoIbibo@5891e32e]" name="datePicker" duration-ms="6184" started-at="2019-07-29T13:03:49Z" finished-at="2019-07-29T13:03:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open -->
-      </class> <!-- temp.tc_hubspot -->
+        </test-method> <!-- datePicker -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumSessions.DatePicker.DatePickerOnGoIbibo@5891e32e]" name="teardown" is-config="true" duration-ms="2077" started-at="2019-07-29T13:03:55Z" finished-at="2019-07-29T13:03:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumSessions.DatePicker.DatePickerOnGoIbibo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

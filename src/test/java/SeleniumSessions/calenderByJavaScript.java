@@ -13,7 +13,7 @@ public class calenderByJavaScript {
 	
 	public static void main(String[] args)
 	{
-		System.setProperty("webdriver.chrome.driver", "C:\\Vision\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		// Setting up browser driver path
 		
 		driver = new ChromeDriver();
@@ -23,14 +23,14 @@ public class calenderByJavaScript {
 		WebElement calender = driver.findElement(By.xpath("//span[@id='view_fulldate_id_1']"));
 		//calender.click();
 		//WebElement date = driver.findElement(By.xpath("//a[@class='ui-state-default ui-state-highlight ui-state-hover']"));
-		String dateVal = "30-04-2019";
+		String dateVal = "Wed, Jul 31 2019";
 		selectDateByJS(driver, calender, dateVal);
 	}
 
 	
 	public static void selectDateByJS(WebDriver driver, WebElement element, String dateVal)
 	{
-		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("agruments[0].setAttribute('value','"+dateVal+"');", element);
 	}
 }
